@@ -43,11 +43,20 @@
 # Task
 
 # 1. take first name input (message : "enter first name")
-first_name = input("Enter first name : ")
-# 2. take last name input (message : "enter last name")
-last_name = input("Enter last name : ")
-# 3. print "My name is {first name} {last name}
-print(f"my name is {first_name} {last_name}")
+# first_name = input("Enter first name : ")
+# # 2. take last name input (message : "enter last name")
+# last_name = input("Enter last name : ")
+# # 3. print "My name is {first name} {last name}
+# print(f"my name is {first_name} {last_name}")
 # f-string
-# print(f"The number you just input is {numm}")
+# print(f"The number you just input is {num}")
+
+number_1 = input("Enter first number")
+number_1 = int(number_1)
+number_2 = int(input("Enter second number"))
+print(f"the sum of the numbers is {number_1 + number_2}")
+
+
+
+
 
