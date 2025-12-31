@@ -75,14 +75,28 @@ info = [20,63.5,"raunak"]
 
 # 4. Print the total with 13% V.A.T
 
+# list1 = []
+# for i in range(1,6):
+#     price_individual = int(input(f'Enter price for item {i} : '))
+#     list1.append(price_individual)
+# total = 0
+# for price in list1 :
+#     total+=price
+#
+# print(f'Total with V.A.T is {total + (total*0.13)}')
+
 list1 = []
-for i in range(1,6):
-    price_individual = int(input(f'Enter price for item {i} : '))
+leng = len(list1)
+while leng < 5:
+    leng += 1
+    price_individual = int(input(f'Enter price for item {leng}: '))
     list1.append(price_individual)
 total = 0
-for price in list1 :
-    total+=price
-
+index = 0
+while index < leng :
+    total += list1[index]
+    index += 1
+print(f"Total cost is {total}")
 print(f'Total with V.A.T is {total + (total*0.13)}')
 
 
