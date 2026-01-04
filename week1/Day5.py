@@ -1,7 +1,6 @@
 # if else statements
 
 is_door_open = 1.5
-
 # if else ladder
 # if is_door_open == 1:
 #     print('Door is open!')
