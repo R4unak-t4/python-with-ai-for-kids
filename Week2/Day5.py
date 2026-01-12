@@ -69,10 +69,10 @@ Example:
 nums = [10, 20, 4, 20, 5]
 print(find_second_largest(nums))
 
-
 Expected Output:
 10
 
 Hint:
 Think about removing duplicates before finding the largest values.
 '''
+
