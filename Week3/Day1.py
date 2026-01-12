@@ -32,6 +32,13 @@ class car:
     def setColor(self,color):
         self.color = color
 
+    def increase_speed(self,speed):
+        arr = self.speed.split(' ')
+        curr_speed = int(arr[0])
+        curr_speed = curr_speed + speed
+        final_speed = str(curr_speed) + " "+arr[1]
+        self.speed = final_speed
+
 
 # making object of a class
 myCar = car("red","square","60 KM/H",True)
@@ -55,3 +62,6 @@ print(myCar.getColor())
 '''
 Modify the car class to include a method called increase_speed() that increases the car’s speed by a given value (passed as a parameter). Assume the speed is stored as an integer in km/h instead of a string. Then, create an object of the class, increase its speed by 20 km/h, and print the updated speed using a getter method.
 '''
+
+myCar.increase_speed(20)
+print(myCar.speed)
